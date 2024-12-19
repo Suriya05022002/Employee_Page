@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign In </title>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Sign in -->
+    <section class="sign-in">
+
+        <div class="brand-name-show">
+            <h1> My-Task </h1>
+        </div>
+
+        <div class="sign-in-container">
+            <h1> Welcome! </h1>
+
+            <!-- Sign In Form -->
+            <form action="" method="">
+
+                <div class="sign-form-input">
+                    <!-- Email Field -->
+                    <div class="user-input">
+                        <label for="email" class="form-label"> </label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Your Email or Username" required>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="user-input">
+                        <label for="password" class="form-label"> </label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                            required>
+                    </div>
+
+                    <div class="check-forget">
+                        <!-- Remember Me Checkbox -->
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+
+                        <!-- Forgot Password -->
+                        <div>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <!-- Sign In Button -->
+                    <div class="sign-btn">
+                        <button type="submit" value="Sign in" name="signin"> Login In </button>
+                    </div>
+
+                    <div class="sign-google-facebook">
+                        <button type="button"> <a href="#"> <i class="fa-brands fa-google" style="color: orangered;"></i> Sign in with Google </a> </button>
+                        <button type="button"> <a href="#"> <i class="fa-brands fa-facebook-f" style="color: rgb(0, 183, 255);"></i> Sign in with Facebook </a> </button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="clik-register">
+                <h4>Don't have an account? <a href="Register.html"> Register </a> </h4>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

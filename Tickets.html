@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title> Tickets </title>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-icon" id="closeIcon">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="logo-section">
+            <div class="logo">
+                <i class="fas fa-clipboard"></i>
+            </div>
+            <h2 class="brand-name">My-Task</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="Index.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-home"></i>
+                <span>Dashboard</span></a>
+            <a href="Project.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-briefcase"></i>
+                <span>Projects</span></a>
+            <a href="Ourclients.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-users"></i> <span>Our
+                    Clients</span></a>
+            <a href="Tickets.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-ticket-alt"></i>
+                <span>Tickets</span></a>
+            
+            <a href="Sales.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-bullseye"></i> <span> Sales </span> </a>
+            <a href="Report.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-circle-nodes"></i> <span> Insights Report </span> </a>
+            <a href="Feedback.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-message"></i> <span> Feedback</span></a>
+        </nav>
+
+        <div class="bottom-icon">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user-actions">
+                <i class="fas fa-bell"></i>
+
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!--Profile icon option -->
+        <div class="profile-icon-option">
+            <div class="profile-show">
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+
+                <div class="profile-name-mail">
+                    <h4 style="color: #323232;"> Luke Short </h4>
+                    <p style="color: gray;"> lukeshoet25@gmail.com</p>
+                </div>
+            </div>
+
+            <hr>
+            <h5> <a href="#"> <i class="fa-regular fa-clipboard"></i> My Task </a> </h5>
+            <h5> <a href="#"> <i class="fa-solid fa-user-tie"></i> Members </a> </h5>
+            <h5> <a href="signin.html"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> </h5>
+            <hr>
+            <h5> <a href="#"> <i class="fa-solid fa-user-plus"></i> Add Personal Account </a></h5>
+        </div>
+
+        <!-- Tickets -->
+        <div class="clients-headline">
+            <h1> Tickets </h1>
+
+            <div class="tickets-status">
+                <button class="add-clients"> <i class="fa-solid fa-plus"></i> Add Tickets </button>
+            </div>
+        </div>
+
+        <p class="line"> </p>
+
+        <div class="tickets-box">
+            <div class="tickets-content">
+
+                <div class="show-search">
+                    <div class="show-tickets">
+                        <p>Show</p>
+                        <select name="" id="">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>75</option>
+                            <option>100</option>
+                        </select>
+                        <p>entries</p>
+                    </div>
+
+                    <div class="tickets-search">
+                        <label for="search"> Search </label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="tickets-data">
+
+                    <form action="">
+                        <table class="table-content">
+                            <thead>
+                                <tr>
+                                    <th> S.No</th>
+                                    <th> Tickets </th>
+                                    <th> Subject </th>
+                                    <th> Assigned </th>
+                                    <th> Created Date </th>
+                                    <th> Status </th>
+                                    <th> Actions </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td> 1. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0041 </td>
+                                    <td> Display Blur </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-1.jpg" alt="">
+                                        <h4 style="color: gray;"> Robert Anderson </h4>
+                                    </td>
+                                    <td> 18/01/2021 </td>
+                                    <td>
+                                        <p class="tickets-progress"> Completed </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 2. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0052 </td>
+                                    <td> Internet Not Working </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-2.jpg" alt="">
+                                        <h4 style="color: gray;"> Joan Dyer </h4>
+                                    </td>
+                                    <td> 11/09/2024 </td>
+                                    <td>
+                                        <p class="tickets-progress" style="background-color: yellow; color: black;"> in
+                                            Progress </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 3. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0031 </td>
+                                    <td> Leave Balance Wrong </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-3.jpg" alt="">
+                                        <h4 style="color: gray;"> Sally Graham </h4>
+                                    </td>
+                                    <td> 22/10/2024 </td>
+                                    <td>
+                                        <p class="tickets-progress"> Completed </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 4. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0029 </td>
+                                    <td> Salary Amount wrong </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-4" alt="">
+                                        <h4 style="color: gray;"> Phil Glover </h4>
+                                    </td>
+                                    <td> 30/10/2024 </td>
+                                    <td>
+                                        <p class="tickets-progress" style="background-color: yellow; color: black;"> in
+                                            Progress </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 5. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0011 </td>
+                                    <td> Display Blur </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-5.avif" alt="">
+                                        <h4 style="color: gray;"> Victor Rampling </h4>
+                                    </td>
+                                    <td> 19/11/2024 </td>
+                                    <td>
+                                        <p class="tickets-progress"> Completed </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 6. </td>
+                                    <td style="color: rgb(202, 67, 90); font-weight: 500;"> #Tc-0018 </td>
+                                    <td> Internet Not Working </td>
+                                    <td class="tickets-profile">
+                                        <img src="images/performer-6.avif" alt="">
+                                        <h4 style="color: gray;"> Joan Dyer </h4>
+                                    </td>
+                                    <td> 01/12/2024 </td>
+                                    <td>
+                                        <p class="tickets-progress" style="background-color: yellow; color: black;"> in
+                                            Progress </p>
+                                    </td>
+                                    <td class="tickets-action"> <i class="fa-solid fa-pen-to-square"
+                                            style="color: green;"></i> <i class="fa-solid fa-trash"
+                                            style="color: red;"></i> </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </form>
+
+                    <p class="line"></p>
+
+                    <div class="tickets-bottoms">
+                        <p> Showing 1 to 6 of 6 entries </p>
+                        <div class="pre-nxt-btn">
+                            <button> <i class="fa-solid fa-angles-left"></i> Previous </button>
+                            <button> Next <i class="fa-solid fa-angles-right"></i> </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

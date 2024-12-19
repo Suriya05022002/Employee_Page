@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title> Our Clients </title>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-icon" id="closeIcon">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="logo-section">
+            <div class="logo">
+                <i class="fas fa-clipboard"></i>
+            </div>
+            <h2 class="brand-name">My-Task</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="Index.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-home"></i>
+                <span>Dashboard</span></a>
+            <a href="Project.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-briefcase"></i>
+                <span>Projects</span></a>
+            <a href="Ourclients.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-users"></i> <span>Our
+                    Clients</span></a>
+            <a href="Tickets.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-ticket-alt"></i>
+                <span>Tickets</span></a>
+           
+            <a href="Sales.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-bullseye"></i> <span> Sales </span> </a>
+            <a href="Report.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-circle-nodes"></i> <span> Insights Report </span> </a>
+            <a href="Feedback.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-message"></i> <span> Feedback</span></a>
+        </nav>
+
+        <div class="bottom-icon">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user-actions">
+                <i class="fas fa-bell"></i>
+
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!--Profile icon option -->
+        <div class="profile-icon-option">
+            <div class="profile-show">
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+
+                <div class="profile-name-mail">
+                    <h4 style="color: #323232;"> Luke Short </h4>
+                    <p style="color: gray;"> lukeshoet25@gmail.com</p>
+                </div>
+            </div>
+
+            <hr>
+            <h5> <a href="#"> <i class="fa-regular fa-clipboard"></i> My Task </a> </h5>
+            <h5> <a href="#"> <i class="fa-solid fa-user-tie"></i> Members </a> </h5>
+            <h5> <a href="signin.html"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> </h5>
+            <hr>
+            <h5> <a href="#"> <i class="fa-solid fa-user-plus"></i> Add Personal Account </a></h5>
+        </div>
+
+        <!--Clients-->
+        <div class="clients-headline">
+            <h1> Clients </h1>
+
+            <div class="clients-status">
+                <button> Status <i class="fa-solid fa-chevron-down"
+                        style="color: #fff; background-color: transparent;"></i> </button>
+
+                <button class="add-clients"> <i class="fa-solid fa-plus"></i> Add Clients </button>
+            </div>
+        </div>
+
+        <p class="line"> </p>
+
+        <div class="clients-boxes">
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-men-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4>AgilSoft Tech</h4>
+                        <h6 style="color: gray;"> Eric Laughlin </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-women-profile.jpg" alt="">
+                        <h3> Manager </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4> microsoft </h4>
+                        <h6 style="color: gray;"> Satya Nadella </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-men-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4> Google </h4>
+                        <h6 style="color: gray;"> Sundar Pichai </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-men-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4> Pixelwibes </h4>
+                        <h6 style="color: gray;"> Nirav Faldu </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-men-profile.jpg" alt="">
+                        <h3> Manager </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4> Deltasoft Tech </h4>
+                        <h6 style="color: gray;"> Una Murray </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-women-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4> Design Tech </h4>
+                        <h6 style="color: gray;"> Paul Grant </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-women-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4>VerinSoft</h4>
+                        <h6 style="color: gray;"> Amanda Russell </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-box">
+                <div class="client">
+                    <div class="client-profile">
+                        <img src="images/client-men-profile.jpg" alt="">
+                        <h3> CEO </h3>
+                        <div class="edit-del">
+                            <i class="fa-solid fa-pen-to-square" style="color: green;"></i>
+                            <i class="fa-solid fa-trash" style="color: red;"></i>
+                        </div>
+                    </div>
+
+                    <div class="client-details">
+                        <h4>Design Tech</h4>
+                        <h6 style="color: gray;"> Paul Grant </h6>
+                        <div class="line"> </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis, animi illo quam ratione recusandae! Perspiciatis quisquam delectus veniam ex?</p>
+                        <div class="client-details-btn">
+                            <button> <i class="fa-regular fa-message"></i> Chat </button>
+                            <button> <i class="fa-solid fa-user"></i> Profile </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+   <script src="script.js"> </script>
+</body>
+
+</html>

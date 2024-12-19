@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title> Feedback </title>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-icon" id="closeIcon">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="logo-section">
+            <div class="logo">
+                <i class="fas fa-clipboard"></i>
+            </div>
+            <h2 class="brand-name">My-Task</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="Index.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-home"></i>
+                <span>Dashboard</span></a>
+            <a href="Project.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-briefcase"></i>
+                <span>Projects</span></a>
+            <a href="Ourclients.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-users"></i> <span>Our
+                    Clients</span></a>
+            <a href="Tickets.html" class="menu-item" onclick="toggleMenu()"><i class="fas fa-ticket-alt"></i>
+                <span>Tickets</span></a>
+           
+            <a href="Sales.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-bullseye"></i> <span>
+                    Sales </span> </a>
+            <a href="Report.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-circle-nodes"></i> <span>
+                    Insights Report </span> </a>
+            <a href="Feedback.html" class="menu-item" onclick="toggleMenu()"> <i class="fa-solid fa-message"></i> <span>
+                    Feedback</span></a>
+        </nav>
+
+        <div class="bottom-icon">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user-actions">
+                <i class="fas fa-bell"></i>
+
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!--Profile icon option -->
+        <div class="profile-icon-option">
+            <div class="profile-show">
+                <div class="profile-icon">
+                    <img src="images/profile_img.png" alt="">
+                </div>
+
+                <div class="profile-name-mail">
+                    <h4 style="color: #323232;"> Luke Short </h4>
+                    <p style="color: gray;"> lukeshoet25@gmail.com</p>
+                </div>
+            </div>
+
+            <hr>
+            <h5> <a href="#"> <i class="fa-regular fa-clipboard"></i> My Task </a> </h5>
+            <h5> <a href="#"> <i class="fa-solid fa-user-tie"></i> Members </a> </h5>
+            <h5> <a href="signin.html"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> </h5>
+            <hr>
+            <h5> <a href="#"> <i class="fa-solid fa-user-plus"></i> Add Personal Account </a></h5>
+        </div>
+
+        <h1> Feedback </h1>
+
+        <p class="line"> </p>
+
+        <!--Feedback Form -->
+
+        <div class="feedback-form">
+            <div class="feedback-form-header">
+                <h4> Feedback Type </h4>
+
+                <div class="feedback-type">
+                    <p> <input type="radio" name="Feedback"> Comments </p>
+                    <p> <input type="radio" name="Feedback"> Suggestions </p>
+                    <p> <input type="radio" name="Feedback"> Question </p>
+                </div>
+            </div>
+
+            <div class="feedback-describe">
+                <h4> Describe Your Feedback </h4>
+
+                <textarea name="describe" form="usrform"> </textarea>
+            </div>
+
+            <div class="feedback-user-details">
+                <div class="user-details">
+                    <h4> Name </h4>
+
+                    <div class="name-input">
+                        <input type="firstname" class="form-control" name="firstname" placeholder="First Name" required>
+                        <input type="lastname" class="form-control" name="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="user-details">
+                    <h4> Email </h4>
+
+                    <div class="feedback-user-input">
+                        <input type="email" class="form-control" name="email" placeholder="myname@example.com" required>
+                    </div>
+                </div>
+
+                <div class="feedback-submit-btn">
+                    <input type="button" value="Submit">
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
